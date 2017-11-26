@@ -81,7 +81,7 @@ public class GetMenu {
 			//生成信息列表
 			RandomAccessFile rf=new RandomAccessFile("d:\\abc.txt","rw");   
 		    rf.seek(rf.length());  //将指针移动到文件末尾   
-		    String str = "文件名\r\t类型\r\t修改时间/t大小\r\n";
+		    String str = "文件名\r\t类型\r\t修改时间\r\t大小\r\n";
 		    rf.write(str.getBytes()); //字符串末尾需要换行符   
 		        
 			for(int i=0;i<list.length;i++){
